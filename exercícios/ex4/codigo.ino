@@ -14,19 +14,12 @@ void loop()
 {  
   estadoBotao = digitalRead(botao);          
   if (estadoBotao == HIGH) {
-    piscaLed();
+    digitalWrite(led,HIGH);
   } else {
     digitalWrite(led,LOW);
   }       
 }
 
-void piscaLed()
-{
-    digitalWrite(led,HIGH);
-    delay(1000);
-    digitalWrite(led,LOW);
-    delay(1000);
-     
-}
+
 
  
